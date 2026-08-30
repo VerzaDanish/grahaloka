@@ -25,6 +25,7 @@ import {
   RefreshCw,
   Sliders,
   Layers,
+  Clock,
 } from "lucide-react";
 import { resizeImageFile } from "@/lib/image-resizer";
 
@@ -701,41 +702,44 @@ export default function AdminDashboardPage() {
 
       {/* Main Container */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 space-y-6">
-        {/* Sticky Uncommitted Changes & 1-Click Push Alert Banner */}
+        {/* Sticky Pending Changes Alert Banner */}
         {gitStatus && gitStatus.hasUncommittedChanges && (
-          <div className="bg-amber-950/60 border border-amber-800/80 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg backdrop-blur-md">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-400 shrink-0 border border-amber-500/30">
-                <AlertTriangle className="w-5 h-5 animate-bounce" />
+          <div className="bg-[#241F18] border border-amber-500/40 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xl backdrop-blur-md">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400 shrink-0 border border-amber-500/30">
+                <Clock className="w-5 h-5 animate-pulse" />
               </div>
               <div>
-                <h4 className="font-bold text-sm text-amber-200">
-                  Terdapat {gitStatus.changedFilesCount} Perubahan File Belum Di-Push ke GitHub
+                <div className="flex items-center gap-2">
+                  <span className="px-2.5 py-0.5 rounded-md bg-amber-500/20 text-amber-300 font-bold text-[11px] uppercase tracking-wider border border-amber-500/30">
+                    Status: PENDING SINKRONISASI
+                  </span>
+                  <span className="text-xs text-[#A89F91]">({gitStatus.changedFilesCount} file diperbarui)</span>
+                </div>
+                <h4 className="font-bold text-sm text-[#F5F0E8] mt-1">
+                  Perubahan Tersimpan di Sistem Lokal
                 </h4>
-                <p className="text-xs text-amber-300/80 mt-0.5">
-                  Klik tombol di samping untuk otomatis commit & push langsung dari website tanpa perlu buka terminal!
+                <p className="text-xs text-[#B5A998] mt-0.5">
+                  Seluruh update tulisan & gambar Anda telah tersimpan dengan aman. Pengembang akan menyinkronkan data ini ke server publik saat online.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-3 w-full sm:w-auto shrink-0">
-              <label className="flex items-center gap-2 text-xs text-amber-200 cursor-pointer select-none">
-                <input
-                  type="checkbox"
-                  checked={autoPushOnSave}
-                  onChange={(e) => setAutoPushOnSave(e.target.checked)}
-                  className="rounded accent-[#C9A36A]"
-                />
-                Auto Push
-              </label>
+            <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
+              <button
+                onClick={() => setActiveTab("git")}
+                className="px-4 py-2 rounded-xl bg-[#2D2823] hover:bg-[#3B352E] text-xs font-semibold text-[#D5C7B3] border border-[#4A433A] transition cursor-pointer"
+              >
+                Lihat Detail Draf
+              </button>
 
               <button
                 onClick={() => handleGitSync()}
                 disabled={syncingGit}
-                className="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold text-xs flex items-center justify-center gap-2 shadow-md cursor-pointer transition disabled:opacity-50"
+                className="px-4 py-2 rounded-xl bg-[#C9A36A] hover:bg-[#DBC095] text-[#141311] font-bold text-xs flex items-center gap-1.5 transition cursor-pointer disabled:opacity-50"
               >
-                <RefreshCw className={`w-4 h-4 ${syncingGit ? "animate-spin" : ""}`} />
-                <span>{syncingGit ? "Mengunggah..." : "⚡ Push ke GitHub Sekarang"}</span>
+                <RefreshCw className={`w-3.5 h-3.5 ${syncingGit ? "animate-spin" : ""}`} />
+                <span>{syncingGit ? "Proses..." : "Sinkronkan Sekarang"}</span>
               </button>
             </div>
           </div>
@@ -1735,17 +1739,17 @@ export default function AdminDashboardPage() {
               </form>
             )}
 
-            {/* TAB 4: STATUS GIT & COMMIT HELPER */}
+            {/* TAB 4: STATUS SINKRONISASI & ANTREAN DEPLOY */}
             {activeTab === "git" && (
               <div className="space-y-6">
                 <div className="bg-[#1C1A17] border border-[#332F2A] rounded-2xl p-6 space-y-6">
                   <div className="flex items-center justify-between border-b border-[#2D2A26] pb-4">
                     <div>
                       <h2 className="font-serif font-bold text-xl text-[#F5F0E8] flex items-center gap-2">
-                        <GitCommit className="w-6 h-6 text-[#C9A36A]" /> Status Repository & Commit Notifier
+                        <Clock className="w-6 h-6 text-[#C9A36A]" /> Status Sinkronisasi & Antrean Deploy
                       </h2>
                       <p className="text-xs text-[#998F82] mt-1">
-                        Memantau file yang baru saja diupdate via Admin untuk persiapan commit & push ke server
+                        Menampilkan daftar draf tulisan & gambar yang telah tersimpan di lokal dan siap disinkronkan oleh pengembang.
                       </p>
                     </div>
                     <button
@@ -1767,20 +1771,20 @@ export default function AdminDashboardPage() {
                       >
                         <div className="flex items-center gap-3">
                           {gitStatus.hasUncommittedChanges ? (
-                            <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0" />
+                            <Clock className="w-6 h-6 text-amber-400 shrink-0 animate-pulse" />
                           ) : (
                             <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
                           )}
                           <div>
                             <div className="font-bold text-base">
                               {gitStatus.hasUncommittedChanges
-                                ? `Terdapat ${gitStatus.changedFilesCount} file yang belum di-commit`
-                                : "Semua perubahan tersimpan & aman (Clean Repository)"}
+                                ? `Terdapat ${gitStatus.changedFilesCount} Draf Update (Pending Deploy)`
+                                : "Semua draf telah disinkronkan & terpublikasi sempurna!"}
                             </div>
                             <div className="text-xs opacity-80 mt-0.5">
                               {gitStatus.hasUncommittedChanges
-                                ? "Klik tombol 'Push ke GitHub Sekarang' di bawah untuk otomatis upload tanpa perlu buka terminal!"
-                                : "Tidak ada file lokal yang perlu di-push saat ini."}
+                                ? "Data tersimpan aman. Pengembang dapat menekan tombol 'Sinkronkan Sekarang' saat online untuk mempublikasikan perubahan."
+                                : "Tidak ada file lokal yang perlu dipublikasikan saat ini."}
                             </div>
                           </div>
                         </div>
@@ -1791,7 +1795,7 @@ export default function AdminDashboardPage() {
                           className="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold text-xs flex items-center justify-center gap-2 shadow-lg cursor-pointer transition disabled:opacity-50"
                         >
                           <RefreshCw className={`w-4 h-4 ${syncingGit ? "animate-spin" : ""}`} />
-                          <span>{syncingGit ? "Mengunggah..." : "⚡ Push ke GitHub Sekarang"}</span>
+                          <span>{syncingGit ? "Proses..." : "Sinkronkan Sekarang"}</span>
                         </button>
                       </div>
 
