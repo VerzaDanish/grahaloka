@@ -8,6 +8,9 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://grahaloka.com";
 
 interface CustomPage {
   id: string;
@@ -47,14 +50,26 @@ export async function generateMetadata({
     };
   }
 
+  const pageUrl = `${BASE_URL}/p/${pageData.slug}`;
+
   return {
-    title: pageData.metaTitle || `${pageData.title} | Grahaloka`,
+    title: pageData.metaTitle || `${pageData.title} | Grahaloka Architecture & Build`,
     description: pageData.metaDescription,
     keywords: pageData.keywords ? pageData.keywords.split(",").map((k) => k.trim()) : undefined,
+    alternates: {
+      canonical: pageUrl,
+    },
     openGraph: {
       title: pageData.metaTitle || pageData.title,
       description: pageData.metaDescription,
-      images: pageData.headerImage ? [pageData.headerImage] : undefined,
+      url: pageUrl,
+      images: pageData.headerImage ? [pageData.headerImage] : [`${BASE_URL}/logo.png`],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageData.metaTitle || pageData.title,
+      description: pageData.metaDescription,
+      images: pageData.headerImage ? [pageData.headerImage] : [`${BASE_URL}/logo.png`],
     },
   };
 }
@@ -73,6 +88,13 @@ export default async function DynamicCustomPage({
 
   return (
     <main className="min-h-screen bg-[#F5F0E8] text-[#22201D] font-sans selection:bg-[#D5C7B3]">
+      <JsonLd
+        type="page"
+        title={pageData.title}
+        description={pageData.metaDescription}
+        url={`${BASE_URL}/p/${pageData.slug}`}
+        image={pageData.headerImage}
+      />
       <Navbar />
 
       {/* Header Banner */}

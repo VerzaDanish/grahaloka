@@ -8,6 +8,9 @@ import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark } from "lucide-react
 import Link from "next/link";
 
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://grahaloka.com";
 
 interface Article {
   id: string;
@@ -51,11 +54,31 @@ export async function generateMetadata({
     };
   }
 
+  const articleUrl = `${BASE_URL}/artikel/${article.slug}`;
+
   return {
-    title: article.metaTitle || `${article.title} | Grahaloka`,
+    title: article.metaTitle || `${article.title} | Grahaloka Studio`,
     description: article.metaDescription || article.excerpt,
     keywords: article.keywords ? article.keywords.split(",").map((k) => k.trim()) : undefined,
+    alternates: {
+      canonical: articleUrl,
+    },
     openGraph: {
+      title: article.metaTitle || article.title,
+      description: article.metaDescription || article.excerpt,
+      url: articleUrl,
+      type: "article",
+      images: [
+        {
+          url: article.coverImage,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
       title: article.metaTitle || article.title,
       description: article.metaDescription || article.excerpt,
       images: [article.coverImage],
@@ -90,6 +113,15 @@ export default async function ArticleDetailPage({
 
   return (
     <main className="min-h-screen bg-[#F5F0E8] text-[#22201D] font-sans selection:bg-[#D5C7B3] selection:text-[#171717]">
+      <JsonLd
+        type="article"
+        title={article.title}
+        description={article.excerpt}
+        url={`${BASE_URL}/artikel/${article.slug}`}
+        image={article.coverImage}
+        datePublished={article.date}
+        authorName={article.author}
+      />
       <Navbar />
 
       {/* Back Link Header */}
