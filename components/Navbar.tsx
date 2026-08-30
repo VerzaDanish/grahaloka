@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { ArrowRight, Menu, X, Phone, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 
 interface NavbarProps {
   onOpenConsultation?: () => void;
@@ -35,31 +35,6 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
 
   return (
     <>
-      {/* Top Banner Bar */}
-      <div className="bg-[#1A1917] text-[#D5C7B3] text-xs py-2 px-4 md:px-8 flex justify-between items-[#1A1917] transition-all">
-        <div className="max-w-7xl mx-auto w-full flex flex-wrap justify-between items-center gap-2">
-          <div className="flex items-center gap-6 text-[#A39785]">
-            <span className="flex items-center gap-1.5 hover:text-[#EBE4D8] transition-colors">
-              <Phone className="w-3.5 h-3.5 text-[#C5B097]" />
-              +1 (800) 482-9102
-            </span>
-            <span className="hidden sm:flex items-center gap-1.5 hover:text-[#EBE4D8] transition-colors">
-              <Mail className="w-3.5 h-3.5 text-[#C5B097]" />
-              contact@elysian-build.com
-            </span>
-            <span className="hidden md:flex items-center gap-1.5 text-[#887C6C]">
-              <MapPin className="w-3.5 h-3.5 text-[#C5B097]" />
-              New York • Dubai • London • Singapore
-            </span>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="bg-[#2A2824] px-2.5 py-0.5 rounded-full text-[10px] font-medium text-[#D5C7B3] tracking-wide uppercase border border-[#3A3630]">
-              Full Turnkey Services
-            </span>
-          </div>
-        </div>
-      </div>
-
       {/* Main Header Nav */}
       <header
         className={`sticky top-0 z-40 transition-all duration-300 ${
