@@ -91,9 +91,13 @@ export default function RootLayout({
   return (
     <html
       lang="id"
+      suppressHydrationWarning
       className={`${cormorant.variable} ${jakarta.variable} antialiased scroll-smooth`}
     >
-      <body className="bg-[#F5F0E8] text-[#22201D] font-sans selection:bg-[#D5C7B3] selection:text-[#171717] min-h-screen flex flex-col">
+      <body
+        suppressHydrationWarning
+        className="bg-[#F5F0E8] text-[#22201D] font-sans selection:bg-[#D5C7B3] selection:text-[#171717] min-h-screen flex flex-col"
+      >
         <JsonLd type="home" />
         {children}
       </body>
