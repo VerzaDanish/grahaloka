@@ -41,13 +41,17 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#2A2824]">
           {/* Brand Col */}
           <div className="md:col-span-4 space-y-4">
-            <a href="#hero" className="flex flex-col">
-              <span className="font-serif text-3xl tracking-[0.2em] font-semibold text-white">
-                GRAHA LOKA
-              </span>
-              <span className="text-[10px] tracking-[0.3em] uppercase text-[#887C6C] font-sans -mt-1 font-medium">
-                Architecture & Build Studio • Bali
-              </span>
+            <a href="#hero" className="flex items-center gap-3">
+              {/* eslint-disable-next-html-element-suppression */}
+              <img src="/logo.png" alt="Grahaloka Logo" className="w-10 h-10 object-contain" />
+              <div className="flex flex-col">
+                <span className="font-serif text-3xl tracking-[0.2em] font-semibold text-white">
+                  GRAHA LOKA
+                </span>
+                <span className="text-[10px] tracking-[0.3em] uppercase text-[#887C6C] font-sans -mt-1 font-medium">
+                  Architecture & Build Studio • Bali
+                </span>
+              </div>
             </a>
             <p className="text-xs text-[#A39785] leading-relaxed max-w-sm font-light">
               Crafting timeless architecture and interiors with sustainable innovation and craftsmanship in Bali. Full-turnkey contractor, 3D render studio, CAD drafter, and civil construction.

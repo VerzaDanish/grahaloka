@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "Grahaloka | Jasa Arsitek, Kontraktor & Desain Interior Bali",
   description: "Grahaloka — Studio arsitektur 3D, gambar kerja drafter, dan kontraktor konstruksi berpengalaman di Bali & Indonesia. Mewujudkan hunian impian dengan presisi & garansi kualitas.",
   keywords: ["grahaloka", "arsitek bali", "kontraktor bali", "desain interior", "3d rendering", "jasa renovasi rumah", "konstruksi villa"],
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

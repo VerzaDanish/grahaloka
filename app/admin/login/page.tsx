@@ -43,8 +43,9 @@ export default function AdminLoginPage() {
         <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#C9A36A]/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#C9A36A]/15 text-[#DBC095] border border-[#C9A36A]/30 mb-4 shadow-inner">
-            <Lock className="w-8 h-8" />
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-[#C9A36A]/10 text-[#DBC095] border border-[#C9A36A]/30 mb-4 p-3 shadow-inner">
+            {/* eslint-disable-next-html-element-suppression */}
+            <img src="/logo.png" alt="Grahaloka Logo" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-2xl font-bold tracking-tight font-serif text-[#F5F0E8]">
             Admin CMS Grahaloka

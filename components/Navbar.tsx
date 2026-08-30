@@ -43,13 +43,17 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Logo */}
-          <a href="#hero" className="flex flex-col group">
-            <span className="font-serif text-2xl md:text-3xl tracking-[0.2em] font-semibold text-[#1A1917] group-hover:opacity-80 transition-opacity">
-              GRAHA LOKA
-            </span>
-            <span className="text-[9px] tracking-[0.3em] uppercase text-[#887C6C] font-sans -mt-1 font-medium">
-              Architecture & Build • Bali
-            </span>
+          <a href="#hero" className="flex items-center gap-3 group">
+            {/* eslint-disable-next-html-element-suppression */}
+            <img src="/logo.png" alt="Grahaloka Logo" className="w-9 h-9 object-contain group-hover:scale-105 transition-transform" />
+            <div className="flex flex-col">
+              <span className="font-serif text-2xl md:text-3xl tracking-[0.2em] font-semibold text-[#1A1917] group-hover:opacity-80 transition-opacity">
+                GRAHA LOKA
+              </span>
+              <span className="text-[9px] tracking-[0.3em] uppercase text-[#887C6C] font-sans -mt-1 font-medium">
+                Architecture & Build • Bali
+              </span>
+            </div>
           </a>
 
           {/* Desktop Links */}
