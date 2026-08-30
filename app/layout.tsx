@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
 
@@ -106,6 +107,7 @@ export default function RootLayout({
       >
         <JsonLd type="home" />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
