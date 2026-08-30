@@ -110,6 +110,7 @@ export default function JsonLd({
   };
 
   let articleSchema = null;
+  const staticFallbackDate = "2026-08-30T00:00:00.000Z";
   if (type === "article") {
     articleSchema = {
       "@context": "https://schema.org",
@@ -118,10 +119,10 @@ export default function JsonLd({
         "@type": "WebPage",
         "@id": url || BASE_URL,
       },
-      headline: title,
+      headline: title || "Grahaloka Article",
       image: [image || `${BASE_URL}/logo.png`],
-      datePublished: datePublished || new Date().toISOString(),
-      dateModified: datePublished || new Date().toISOString(),
+      datePublished: datePublished || staticFallbackDate,
+      dateModified: datePublished || staticFallbackDate,
       author: {
         "@type": "Person",
         name: authorName || "Tim Grahaloka Studio",
@@ -134,7 +135,7 @@ export default function JsonLd({
           url: `${BASE_URL}/logo.png`,
         },
       },
-      description: description,
+      description: description || "Artikel & Inspirasi Arsitektur Grahaloka Studio Bali",
     };
   }
 
