@@ -75,7 +75,7 @@ export default function AdminLoginPage() {
             />
             <p className="text-[11px] text-[#8C8275] mt-2 flex items-start gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-[#C9A36A] shrink-0 mt-0.5" />
-              <span>Untuk perubahan atau pergantian password admin, harap hubungi pemilik website terlebih dahulu.</span>
+              <span>Untuk perubahan atau pergantian password admin, harap hubungi developer terlebih dahulu melalui whatsapp.</span>
             </p>
           </div>
 
