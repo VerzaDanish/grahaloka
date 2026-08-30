@@ -73,8 +73,9 @@ export default function AdminLoginPage() {
               className="w-full px-4 py-3.5 rounded-xl bg-[#191715] border border-[#3D3833] text-[#F5F0E8] placeholder-[#787065] focus:outline-none focus:border-[#C9A36A] focus:ring-1 focus:ring-[#C9A36A] transition duration-200"
               required
             />
-            <p className="text-[11px] text-[#8C8275] mt-1.5 flex items-center gap-1">
-              <ShieldCheck className="w-3 h-3 text-[#C9A36A]" /> Password default: <code className="bg-[#191715] px-1 py-0.5 rounded text-[#DBC095]">grahaloka2026</code>
+            <p className="text-[11px] text-[#8C8275] mt-2 flex items-start gap-1.5">
+              <ShieldCheck className="w-3.5 h-3.5 text-[#C9A36A] shrink-0 mt-0.5" />
+              <span>Untuk perubahan atau pergantian password admin, harap hubungi pemilik website terlebih dahulu.</span>
             </p>
           </div>
 
