@@ -1,0 +1,137 @@
+{
+  "hero": {
+    "badge": "GRAHA LOKA",
+    "title": "Crafting timeless architecture and interiors with sustainable innovation and craftsmanship in Bali.",
+    "description": "Premier interior & exterior contractor, 3D architectural rendering studio, CAD drafting, and full-turnkey construction in Bali.",
+    "ctaText": "Book a Consultation",
+    "heroImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2800&q=95"
+  },
+  "heroCards": [
+    {
+      "tag": "01 • Design",
+      "title": "Interior & Exterior",
+      "desc": "Custom spatial planning, material curation & exterior facade styling."
+    },
+    {
+      "tag": "02 • Visualization",
+      "title": "3D Architecture",
+      "desc": "Ultra photorealistic 8K renders, animation & VR walkthroughs."
+    },
+    {
+      "tag": "03 • Technical",
+      "title": "Drafter & BIM",
+      "desc": "Architectural CAD blueprints, MEP drafting & permit schematics."
+    },
+    {
+      "tag": "04 • Execution",
+      "title": "General Contractor",
+      "desc": "Turnkey construction build, site supervision & structural engineering."
+    }
+  ],
+  "trust": {
+    "badge": "Proven Excellence",
+    "title": "Built On Trust",
+    "description": "Built through timeless craftsmanship, technical precision, and lasting client relationships across interior, exterior, 3D archviz, drafting, and construction.",
+    "image1": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+    "image2": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80",
+    "image3": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "image4": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    "stat1": "250+",
+    "stat1Label": "Project Completed",
+    "stat1Desc": "Delivering thoughtfully designed spaces across residential, commercial, and industrial sectors.",
+    "stat2": "15+",
+    "stat2Label": "Years of Experience",
+    "stat2Desc": "Over a decade of master craftsmanship and architectural engineering excellence.",
+    "stat3": "98%+",
+    "stat3Label": "Client Satisfaction",
+    "stat3Desc": "Consistently exceeding expectations through transparent project management.",
+    "stat4": "12",
+    "stat4Label": "Design Awards",
+    "stat4Desc": "Recognized globally for sustainable luxury architecture and innovative space design."
+  },
+  "servicesHeader": {
+    "badge": "Comprehensive Disciplines",
+    "title": "Our Core Services",
+    "description": "An end-to-end ecosystem covering design, 3D visualization, drafting, contracting, and construction execution."
+  },
+  "services": [
+    {
+      "id": "contractor",
+      "title": "Interior & Exterior Contractor",
+      "subtitle": "Turnkey fit-out, custom joinery, bespoke finishes & climate-engineered exterior facades.",
+      "description": "We bridge the gap between creative vision and physical reality. As licensed general contractors, we manage luxury millwork, acoustic wall systems, and high-end facade installation.",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80",
+      "deliverables": "Complete built space, material certificates, 2-year warranty."
+    },
+    {
+      "id": "3d-architecture",
+      "title": "3D Design & Architect",
+      "subtitle": "Photorealistic 8K renderings, spatial layout design & immersive VR architectural walkthroughs.",
+      "description": "Experience your vision before groundbreaking. Our senior architects craft hyper-realistic digital twins of your space, modeling real-world physics and lighting.",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+      "deliverables": "High-res render packages, VR 360 viewer links, PDF masterplan."
+    },
+    {
+      "id": "drafter",
+      "title": "Architectural & BIM Drafter",
+      "subtitle": "CAD drafting, structural blueprints, MEP schematics & permit-ready construction drawings.",
+      "description": "Technical accuracy is the foundation of flawless construction. Our team creates complete CAD drawing sets, 3D BIM models, and structural calculations.",
+      "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80",
+      "deliverables": "AutoCAD .DWG files, Revit BIM models, stamped permit drawings."
+    },
+    {
+      "id": "construction",
+      "title": "General Construction & Build",
+      "subtitle": "Structural engineering, foundation work, project management & ground-up construction.",
+      "description": "From breaking ground to final key handover, our construction division handles heavy structural works, reinforced concrete framing, and steel structures.",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80",
+      "deliverables": "Occupancy permits, structural warranties, as-built documentation."
+    }
+  ],
+  "comparison": {
+    "title": "Interactive 3D Render vs Built Execution",
+    "description": "Geser slider di bawah untuk melihat kepresisian hasil render 3D arsitek kami dibandingkan hasil nyata konstruksi proyek yang dibangun.",
+    "renderImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85",
+    "buildImage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85"
+  },
+  "workflow": {
+    "badge": "Proven Execution",
+    "title": "5-Step Execution Workflow",
+    "description": "Proses pengerjaan transparan dari konsultasi awal hingga serah terima kunci.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Discovery & Briefing",
+        "desc": "Initial site inspection, spatial requirements analysis, aesthetic goal alignment, and preliminary budget framework definition."
+      },
+      {
+        "num": "02",
+        "title": "2D CAD Drafting & BIM",
+        "desc": "Creating detailed architectural blueprints, structural engineering calculations, MEP schematics, and city permit documentation."
+      },
+      {
+        "num": "03",
+        "title": "3D Render & VR Simulation",
+        "desc": "Photorealistic 8K visualizations and 360° VR walkthroughs allowing client approval of exact materials, lighting, and finishes."
+      },
+      {
+        "num": "04",
+        "title": "Procurement & Contracting",
+        "desc": "Fixed-price Bill of Quantities (BoQ), high-grade material sourcing, millwork fabrication, and milestone scheduling."
+      },
+      {
+        "num": "05",
+        "title": "Construction & Handover",
+        "desc": "On-site civil engineering build, continuous quality audits, site cleanup, and final turnkey key handover with warranty."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "+1 (800) 482-9102",
+    "whatsapp": "6281234567890",
+    "email": "contact@elysian-build.com",
+    "address": "Jl. Graha Utama No. 88, Jakarta Selatan, Indonesia",
+    "hours": "Senin - Sabtu: 08:00 - 17:00 WIB",
+    "copyright": "© 2026 GRAHALOKA Architecture & Build Inc. All rights reserved."
+  }
+}
