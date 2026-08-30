@@ -59,7 +59,9 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
             {/* eslint-disable-next-html-element-suppression */}
             <img
               src={heroData.heroImage || "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2800&q=95"}
-              alt="Hero Visual Space"
+              alt="Grahaloka Architecture & Build Hero Visual Space"
+              loading="eager"
+              decoding="async"
               className="w-full h-full object-cover object-center transform group-hover:scale-102 transition-transform duration-1000 ease-out"
             />
 

@@ -55,7 +55,9 @@ export default function ComparisonSlider() {
             {/* eslint-disable-next-html-element-suppression */}
             <img
               src={compData.renderImage}
-              alt="3D Render Visualization"
+              alt="3D Render Visualization Grahaloka"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute top-6 right-6 bg-[#1A1917]/80 backdrop-blur-md text-white text-xs font-semibold px-4 py-2 rounded-full border border-white/20">
@@ -71,7 +73,9 @@ export default function ComparisonSlider() {
             {/* eslint-disable-next-html-element-suppression */}
             <img
               src={compData.buildImage}
-              alt="Finished Construction Build"
+              alt="Finished Construction Build Grahaloka"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover max-w-none"
               style={{ width: "100%", height: "100%" }}
             />
@@ -96,6 +100,7 @@ export default function ComparisonSlider() {
             min={0}
             max={100}
             value={sliderPos}
+            aria-label="Komparasi Visual Render 3D vs Bangunan Jadi Grahaloka"
             onChange={(e) => setSliderPos(Number(e.target.value))}
             className="absolute inset-0 opacity-0 cursor-ew-resize w-full h-full z-30"
           />

@@ -106,7 +106,7 @@ export default function WorkflowSection() {
                   <h3 className="font-serif font-semibold text-lg text-[#1A1917]">
                     {step.title}
                   </h3>
-                  <p className="text-xs text-[#6B6358] font-light leading-relaxed">
+                  <p className="text-xs text-[#544D44] font-light leading-relaxed">
                     {step.desc}
                   </p>
                 </div>

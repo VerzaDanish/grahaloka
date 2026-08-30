@@ -210,7 +210,9 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
             {/* eslint-disable-next-html-element-suppression */}
             <img
               src={currentService.image}
-              alt={currentService.title}
+              alt={`Layanan ${currentService.title} Grahaloka`}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />

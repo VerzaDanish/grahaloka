@@ -68,7 +68,9 @@ export default function TrustGridSection() {
               {/* eslint-disable-next-html-element-suppression */}
               <img
                 src={trustData.image1}
-                alt="Architectural Interior Design"
+                alt="Architectural Interior Design Grahaloka"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
@@ -85,7 +87,7 @@ export default function TrustGridSection() {
               <h3 className="font-sans font-semibold text-base text-[#1A1917] mb-1">
                 {trustData.stat1Label}
               </h3>
-              <p className="text-xs text-[#7A6E5D] font-light leading-relaxed">
+              <p className="text-xs text-[#595147] font-light leading-relaxed">
                 Delivering thoughtfully designed spaces across residential, commercial, and industrial sectors.
               </p>
             </div>
@@ -96,21 +98,24 @@ export default function TrustGridSection() {
             {/* Card 2: Top Stat Card */}
             <div className="bg-white rounded-3xl p-7 shadow-sm border border-[#E4DCCF] flex flex-col justify-center min-h-[220px] hover:shadow-md transition-shadow">
               <div className="font-serif text-4xl md:text-5xl font-semibold text-[#1A1917] mb-2 tracking-tight">
-                15+
+                {trustData.stat2}
               </div>
               <h3 className="font-sans font-semibold text-base text-[#1A1917] mb-1">
-                Years of Experience
+                {trustData.stat2Label}
               </h3>
-              <p className="text-xs text-[#7A6E5D] font-light leading-relaxed">
+              <p className="text-xs text-[#595147] font-light leading-relaxed">
                 Shaping timeless interiors & master-planned architecture with unmatched creative expertise and drafting precision.
               </p>
             </div>
 
             {/* Card 6: Bottom Image */}
             <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden shadow-sm border border-[#E4DCCF] group bg-[#EBE4D8]">
+              {/* eslint-disable-next-html-element-suppression */}
               <img
-                src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
-                alt="Luxury Lounge Corridor"
+                src={trustData.image2}
+                alt="3D CAD & BIM Modeling Grahaloka"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
@@ -124,9 +129,12 @@ export default function TrustGridSection() {
           <div className="flex flex-col gap-5">
             {/* Card 3: Top Image */}
             <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden shadow-sm border border-[#E4DCCF] group bg-[#EBE4D8]">
+              {/* eslint-disable-next-html-element-suppression */}
               <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-                alt="Modern Stone Kitchen Island"
+                src={trustData.image3}
+                alt="Custom Interior Joinery Grahaloka"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
@@ -138,12 +146,12 @@ export default function TrustGridSection() {
             {/* Card 7: Bottom Stat Card */}
             <div className="bg-white rounded-3xl p-7 shadow-sm border border-[#E4DCCF] flex flex-col justify-center min-h-[220px] hover:shadow-md transition-shadow">
               <div className="font-serif text-4xl md:text-5xl font-semibold text-[#1A1917] mb-2 tracking-tight">
-                98%+
+                {trustData.stat3}
               </div>
               <h3 className="font-sans font-semibold text-base text-[#1A1917] mb-1">
-                Client Satisfaction
+                {trustData.stat3Label}
               </h3>
-              <p className="text-xs text-[#7A6E5D] font-light leading-relaxed">
+              <p className="text-xs text-[#595147] font-light leading-relaxed">
                 Built on exceptional client trust, transparent contracting, and flawless turn-key site execution.
               </p>
             </div>
@@ -154,21 +162,24 @@ export default function TrustGridSection() {
             {/* Card 4: Top Stat Card */}
             <div className="bg-white rounded-3xl p-7 shadow-sm border border-[#E4DCCF] flex flex-col justify-center min-h-[220px] hover:shadow-md transition-shadow">
               <div className="font-serif text-4xl md:text-5xl font-semibold text-[#1A1917] mb-2 tracking-tight">
-                12
+                {trustData.stat4}
               </div>
               <h3 className="font-sans font-semibold text-base text-[#1A1917] mb-1">
-                Design Awards
+                {trustData.stat4Label}
               </h3>
-              <p className="text-xs text-[#7A6E5D] font-light leading-relaxed">
+              <p className="text-xs text-[#595147] font-light leading-relaxed">
                 Recognized for exceptional client satisfaction, innovative 3D visualization, and architectural mastery.
               </p>
             </div>
 
             {/* Card 8: Bottom Image */}
             <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden shadow-sm border border-[#E4DCCF] group bg-[#EBE4D8]">
+              {/* eslint-disable-next-html-element-suppression */}
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-                alt="Coastal Villa Bedroom Lounge"
+                src={trustData.image4}
+                alt="General Construction Build Grahaloka"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />

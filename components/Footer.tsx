@@ -119,14 +119,14 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
         </div>
 
         {/* Bottom copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#7A6E5D]">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#A39785]">
           <div>
             {contactData.copyright || `© ${new Date().getFullYear()} GRAHALOKA Architecture & General Contracting Inc. All rights reserved.`}
           </div>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-[#D5C7B3] transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[#D5C7B3] transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-[#D5C7B3] transition-colors">Licensing & Permits</a>
+            <a href="/#hero" aria-label="Privacy Policy" className="hover:text-[#D5C7B3] transition-colors">Privacy Policy</a>
+            <a href="/#hero" aria-label="Terms of Service" className="hover:text-[#D5C7B3] transition-colors">Terms of Service</a>
+            <a href="/#hero" aria-label="Licensing & Permits" className="hover:text-[#D5C7B3] transition-colors">Licensing & Permits</a>
           </div>
         </div>
       </div>
