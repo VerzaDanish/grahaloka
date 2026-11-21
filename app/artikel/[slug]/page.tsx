@@ -10,7 +10,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://grahaloka.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.grahalokadesign.com";
 
 interface Article {
   id: string;
@@ -186,6 +186,7 @@ export default async function ArticleDetailPage({
               <button
                 className="p-2 rounded-full bg-[#F5F0E8] hover:bg-[#E8DFD3] text-[#22201D] transition cursor-pointer"
                 title="Bagikan Artikel"
+                aria-label="Bagikan artikel ini"
               >
                 <Share2 className="w-4 h-4" />
               </button>

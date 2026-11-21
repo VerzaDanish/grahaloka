@@ -10,7 +10,7 @@ import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://grahaloka.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.grahalokadesign.com";
 
 interface CustomPage {
   id: string;

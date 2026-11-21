@@ -1,6 +1,6 @@
 import React from "react";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://grahaloka.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.grahalokadesign.com";
 
 interface JsonLdProps {
   type?: "home" | "article" | "page";
@@ -141,14 +141,18 @@ export default function JsonLd({
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
-      />
+      {type === "home" && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+          />
+        </>
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

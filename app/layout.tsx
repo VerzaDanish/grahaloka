@@ -4,7 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://grahaloka.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.grahalokadesign.com";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-serif",

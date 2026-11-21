@@ -121,6 +121,7 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
               <button
                 key={service.id || index}
                 onClick={() => setActiveTab(index)}
+                aria-label={`Layanan ${service.title}`}
                 className={`p-4 md:p-5 rounded-2xl text-left border transition-all cursor-pointer flex flex-col justify-between space-y-3 ${
                   activeTab === index
                     ? "bg-[#1A1917] text-[#F5F0E8] border-[#1A1917] shadow-md"
@@ -193,6 +194,7 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
             <div className="pt-4 flex flex-wrap items-center gap-4 border-t border-[#F5F0E8]">
               <button
                 onClick={() => onOpenConsultation?.()}
+                aria-label={`Request ${currentService.title} Consultation`}
                 className="bg-[#1A1917] text-[#F5F0E8] px-6 py-3 rounded-full text-xs md:text-sm font-medium hover:bg-[#33302B] transition-all flex items-center gap-2 cursor-pointer shadow-sm"
               >
                 <span>Request {currentService.title} Consultation</span>

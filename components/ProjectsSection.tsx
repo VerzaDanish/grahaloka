@@ -169,6 +169,7 @@ export default function ProjectsSection({ onSelectProject }: ProjectsSectionProp
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
+              aria-label={`Kategori proyek ${tab.label}`}
               className={`px-4 py-2 rounded-full text-xs font-medium transition-all cursor-pointer ${
                 activeTab === tab.id
                   ? "bg-[#1A1917] text-[#F5F0E8] shadow-sm"

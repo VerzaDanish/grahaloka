@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://grahaloka.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.grahalokadesign.com";
 
 interface ArticleItem {
   slug: string;
@@ -75,5 +75,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("Error generating pages sitemap:", err);
   }
 
-  return routes;
+  // Deduplicate entries by URL to ensure zero duplication
+  const uniqueRoutesMap = new Map<string, MetadataRoute.Sitemap[number]>();
+  routes.forEach((route) => {
+    uniqueRoutesMap.set(route.url, route);
+  });
+
+  return Array.from(uniqueRoutesMap.values());
 }

@@ -59,6 +59,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
             <div className="pt-2">
               <button
                 onClick={() => onOpenConsultation?.()}
+                aria-label="Schedule Consultation"
                 className="bg-[#EBE4D8] text-[#1A1917] px-6 py-2.5 rounded-full text-xs font-semibold hover:bg-white transition-all inline-flex items-center gap-2 cursor-pointer"
               >
                 <span>Schedule Consultation</span>

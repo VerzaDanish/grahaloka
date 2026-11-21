@@ -91,6 +91,7 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
                 <div className="pt-2">
                   <button
                     onClick={() => onOpenConsultation?.()}
+                    aria-label={heroData.ctaText}
                     className="bg-[#1A1917] text-[#F5F0E8] hover:bg-black hover:text-white px-7 py-3.5 rounded-full text-xs md:text-sm font-medium active:scale-95 transition-all shadow-xl inline-flex items-center gap-2.5 group cursor-pointer border border-white/20"
                   >
                     <span>{heroData.ctaText}</span>

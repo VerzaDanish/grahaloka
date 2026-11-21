@@ -60,7 +60,7 @@ export default function ArticlesIndexPage() {
 
   return (
     <main className="min-h-screen bg-[#F5F0E8] text-[#22201D] font-sans selection:bg-[#D5C7B3] selection:text-[#171717]">
-      <JsonLd type="home" title="Artikel & Inspirasi Arsitektur Grahaloka" url="https://grahaloka.com/artikel" />
+      <JsonLd type="page" title="Artikel & Inspirasi Arsitektur Grahaloka" url="https://www.grahalokadesign.com/artikel" />
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 
       {/* Header Banner */}
@@ -97,6 +97,7 @@ export default function ArticlesIndexPage() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
+              aria-label={`Kategori artikel ${cat}`}
               className={`px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition cursor-pointer ${
                 selectedCategory === cat
                   ? "bg-[#22201D] text-[#F5F0E8] shadow-md"

@@ -53,6 +53,7 @@ export default function ConsultationModal({
         {/* Modal Close Button */}
         <button
           onClick={handleResetAndClose}
+          aria-label="Tutup formulir konsultasi"
           className="absolute top-4 right-4 z-20 bg-white/80 hover:bg-white text-[#1A1917] p-2.5 rounded-full transition-colors cursor-pointer border border-[#E4DCCF]"
         >
           <X className="w-5 h-5" />
@@ -74,10 +75,11 @@ export default function ConsultationModal({
 
             <div className="space-y-3 pt-2">
               <div>
-                <label className="text-xs font-semibold text-[#4A453E] block mb-1">
+                <label htmlFor="modal-name" className="text-xs font-semibold text-[#4A453E] block mb-1">
                   Full Name *
                 </label>
                 <input
+                  id="modal-name"
                   type="text"
                   required
                   placeholder="e.g. Julian Thorne"
@@ -89,10 +91,11 @@ export default function ConsultationModal({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="text-xs font-semibold text-[#4A453E] block mb-1">
+                  <label htmlFor="modal-email" className="text-xs font-semibold text-[#4A453E] block mb-1">
                     Email Address *
                   </label>
                   <input
+                    id="modal-email"
                     type="email"
                     required
                     placeholder="julian@example.com"
@@ -103,10 +106,11 @@ export default function ConsultationModal({
                 </div>
 
                 <div>
-                  <label className="text-xs font-semibold text-[#4A453E] block mb-1">
+                  <label htmlFor="modal-phone" className="text-xs font-semibold text-[#4A453E] block mb-1">
                     Phone Number
                   </label>
                   <input
+                    id="modal-phone"
                     type="tel"
                     placeholder="+1 (555) 000-0000"
                     value={formData.phone}
@@ -118,10 +122,11 @@ export default function ConsultationModal({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="text-xs font-semibold text-[#4A453E] block mb-1">
+                  <label htmlFor="modal-service" className="text-xs font-semibold text-[#4A453E] block mb-1">
                     Primary Service Needed *
                   </label>
                   <select
+                    id="modal-service"
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full bg-white border border-[#E4DCCF] rounded-xl px-3 py-2.5 text-xs text-[#1A1917] focus:outline-none focus:border-[#1A1917]"
@@ -135,10 +140,11 @@ export default function ConsultationModal({
                 </div>
 
                 <div>
-                  <label className="text-xs font-semibold text-[#4A453E] block mb-1">
+                  <label htmlFor="modal-budget" className="text-xs font-semibold text-[#4A453E] block mb-1">
                     Target Budget Range
                   </label>
                   <select
+                    id="modal-budget"
                     value={formData.budget}
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                     className="w-full bg-white border border-[#E4DCCF] rounded-xl px-3 py-2.5 text-xs text-[#1A1917] focus:outline-none focus:border-[#1A1917]"
@@ -152,10 +158,11 @@ export default function ConsultationModal({
               </div>
 
               <div>
-                <label className="text-xs font-semibold text-[#4A453E] block mb-1">
+                <label htmlFor="modal-location" className="text-xs font-semibold text-[#4A453E] block mb-1">
                   Project Location / City
                 </label>
                 <input
+                  id="modal-location"
                   type="text"
                   placeholder="e.g. Manhattan, NY or International"
                   value={formData.location}
@@ -165,10 +172,11 @@ export default function ConsultationModal({
               </div>
 
               <div>
-                <label className="text-xs font-semibold text-[#4A453E] block mb-1">
+                <label htmlFor="modal-notes" className="text-xs font-semibold text-[#4A453E] block mb-1">
                   Project Description & Specifications
                 </label>
                 <textarea
+                  id="modal-notes"
                   rows={3}
                   placeholder="Describe your project requirements, space size, timeline goals..."
                   value={formData.notes}

@@ -22,6 +22,7 @@ export default function ProjectModal({ project, onClose, onOpenConsultation }: P
         {/* Close Button */}
         <button
           onClick={onClose}
+          aria-label="Tutup detail proyek"
           className="absolute top-4 right-4 z-20 bg-black/70 hover:bg-black text-white p-2.5 rounded-full transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />

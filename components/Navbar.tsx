@@ -73,6 +73,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
           <div className="hidden md:flex items-center gap-4">
             <button
               onClick={() => onOpenConsultation?.()}
+              aria-label="Book a Consultation"
               className="bg-[#1A1917] text-[#F5F0E8] px-6 py-2.5 rounded-full text-xs md:text-sm font-medium hover:bg-[#33302B] active:scale-95 transition-all shadow-sm flex items-center gap-2 group cursor-pointer"
             >
               <span>Book a Consultation</span>
@@ -110,6 +111,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                 setMobileMenuOpen(false);
                 onOpenConsultation?.();
               }}
+              aria-label="Book a Consultation"
               className="w-full bg-[#1A1917] text-[#F5F0E8] py-3 rounded-full text-sm font-medium flex items-center justify-center gap-2"
             >
               <span>Book a Consultation</span>

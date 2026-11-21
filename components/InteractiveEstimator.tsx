@@ -120,7 +120,7 @@ export default function InteractiveEstimator({ onOpenConsultationWithEstimate }:
             {/* Step 3: Area Slider */}
             <div className="space-y-3 bg-[#F5F0E8]/40 p-4 rounded-2xl border border-[#E4DCCF]">
               <div className="flex justify-between items-center">
-                <label className="text-xs font-semibold uppercase tracking-wider text-[#887C6C]">
+                <label htmlFor="floor-area-slider" className="text-xs font-semibold uppercase tracking-wider text-[#887C6C]">
                   3. Total Floor Area
                 </label>
                 <span className="font-serif text-lg font-semibold text-[#1A1917]">
@@ -128,11 +128,13 @@ export default function InteractiveEstimator({ onOpenConsultationWithEstimate }:
                 </span>
               </div>
               <input
+                id="floor-area-slider"
                 type="range"
                 min={300}
                 max={15000}
                 step={100}
                 value={area}
+                aria-label="Total Floor Area dalam square feet"
                 onChange={(e) => setArea(Number(e.target.value))}
                 className="w-full h-2 bg-[#D5C7B3] rounded-lg appearance-none cursor-pointer accent-[#1A1917]"
               />
