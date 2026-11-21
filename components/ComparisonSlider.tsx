@@ -8,8 +8,8 @@ export default function ComparisonSlider() {
   const [compData, setCompData] = useState({
     title: "3D Render vs Finished Built",
     description: "Drag the slider to compare our 3D photorealistic visualization against the final completed construction site build.",
-    renderImage: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80",
-    buildImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+    renderImage: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&fm=webp&w=1600&q=80",
+    buildImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&fm=webp&w=1600&q=80",
   });
 
   useEffect(() => {

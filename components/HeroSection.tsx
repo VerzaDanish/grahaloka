@@ -13,7 +13,7 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
     title: "Crafting timeless architecture and interiors with sustainable innovation and craftsmanship in Bali.",
     description: "Premier interior & exterior contractor, 3D architectural rendering studio, CAD drafting, and full-turnkey construction in Bali.",
     ctaText: "Book a Consultation",
-    heroImage: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2800&q=95",
+    heroImage: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&fm=webp&w=2000&q=80",
   });
 
   const [heroCards, setHeroCards] = useState([
@@ -58,7 +58,7 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
           <div className="relative aspect-[16/10] md:aspect-[21/9] lg:aspect-[2.35/1] w-full min-h-[520px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[780px] bg-[#2A241E] overflow-hidden rounded-none">
             {/* eslint-disable-next-html-element-suppression */}
             <img
-              src={heroData.heroImage || "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2800&q=95"}
+              src={heroData.heroImage || "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&fm=webp&w=2000&q=80"}
               alt="Grahaloka Architecture & Build Hero Visual Space"
               loading="eager"
               decoding="async"

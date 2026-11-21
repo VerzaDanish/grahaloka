@@ -384,7 +384,7 @@ export default function AdminDashboardPage() {
       keywords: artKeywords,
       excerpt: artExcerpt,
       content: artContent,
-      coverImage: artCover || "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+      coverImage: artCover || "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop&fm=webp",
       category: artCategory,
       author: artAuthor,
       published: artPublished,
@@ -878,7 +878,7 @@ export default function AdminDashboardPage() {
                               className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                               onError={(e) => {
                                 (e.target as HTMLImageElement).src =
-                                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop";
+                                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop&fm=webp";
                               }}
                             />
                             <div className="absolute top-3 left-3 bg-[#141311]/80 backdrop-blur-md border border-[#403B35] px-2.5 py-1 rounded-md text-[11px] font-semibold text-[#DBC095]">

@@ -40,7 +40,7 @@ export async function POST(request: Request) {
       keywords: body.keywords || "",
       excerpt: body.excerpt || "",
       content: body.content || "",
-      coverImage: body.coverImage || "/uploads/default.jpg",
+      coverImage: body.coverImage || "/uploads/default.webp",
       category: body.category || "Umum",
       author: body.author || "Admin Grahaloka",
       date: body.date || new Date().toISOString().split("T")[0],

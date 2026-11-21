@@ -10,21 +10,21 @@ export default function TestimonialsSection() {
         "Elysian translated our complex architectural visions into flawless 3D renders, precise CAD blueprints, and finally executed the turnkey interior build without a single budget overrun.",
       author: "Lord Harrison Vance",
       title: "Private Estate Owner • London",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&fm=webp&w=200&q=80",
     },
     {
       quote:
         "The level of accuracy between their 3D renderings and the final completed villa in Dubai was 100%. Their drafting team handled permits effortlessly while general construction ran on schedule.",
       author: "Elena Rostova",
       title: "Real Estate Developer • Dubai",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&fm=webp&w=200&q=80",
     },
     {
       quote:
         "Finding one firm that excels in 3D architecture, technical drafting, general contracting, AND interior fitouts saved us months of coordination friction. Absolute perfectionists.",
       author: "Marcus Vance",
       title: "Commercial Director • New York",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&fm=webp&w=200&q=80",
     },
   ];
 

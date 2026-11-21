@@ -4,7 +4,7 @@
     "title": "Crafting timeless architecture and interiors with sustainable innovation and craftsmanship in Bali.",
     "description": "Premier interior & exterior contractor, 3D architectural rendering studio, CAD drafting, and full-turnkey construction in Bali.",
     "ctaText": "Book a Consultation",
-    "heroImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2800&q=95"
+    "heroImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&fm=webp&w=2000&q=80"
   },
   "heroCards": [
     {
@@ -32,10 +32,10 @@
     "badge": "Proven Excellence",
     "title": "Built On Trust",
     "description": "Built through timeless craftsmanship, technical precision, and lasting client relationships across interior, exterior, 3D archviz, drafting, and construction.",
-    "image1": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
-    "image2": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80",
-    "image3": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-    "image4": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    "image1": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&fm=webp&w=800&q=80",
+    "image2": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&fm=webp&w=800&q=80",
+    "image3": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&fm=webp&w=800&q=80",
+    "image4": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&fm=webp&w=800&q=80",
     "stat1": "250+",
     "stat1Label": "Project Completed",
     "stat1Desc": "Delivering thoughtfully designed spaces across residential, commercial, and industrial sectors.",
@@ -60,7 +60,7 @@
       "title": "Interior & Exterior Contractor",
       "subtitle": "Turnkey fit-out, custom joinery, bespoke finishes & climate-engineered exterior facades.",
       "description": "We bridge the gap between creative vision and physical reality. As licensed general contractors, we manage luxury millwork, acoustic wall systems, and high-end facade installation.",
-      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&fm=webp&w=1000&q=80",
       "deliverables": "Complete built space, material certificates, 2-year warranty."
     },
     {
@@ -68,7 +68,7 @@
       "title": "3D Design & Architect",
       "subtitle": "Photorealistic 8K renderings, spatial layout design & immersive VR architectural walkthroughs.",
       "description": "Experience your vision before groundbreaking. Our senior architects craft hyper-realistic digital twins of your space, modeling real-world physics and lighting.",
-      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&fm=webp&w=1000&q=80",
       "deliverables": "High-res render packages, VR 360 viewer links, PDF masterplan."
     },
     {
@@ -76,7 +76,7 @@
       "title": "Architectural & BIM Drafter",
       "subtitle": "CAD drafting, structural blueprints, MEP schematics & permit-ready construction drawings.",
       "description": "Technical accuracy is the foundation of flawless construction. Our team creates complete CAD drawing sets, 3D BIM models, and structural calculations.",
-      "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80",
+      "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&fm=webp&w=1000&q=80",
       "deliverables": "AutoCAD .DWG files, Revit BIM models, stamped permit drawings."
     },
     {
@@ -84,15 +84,15 @@
       "title": "General Construction & Build",
       "subtitle": "Structural engineering, foundation work, project management & ground-up construction.",
       "description": "From breaking ground to final key handover, our construction division handles heavy structural works, reinforced concrete framing, and steel structures.",
-      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&fm=webp&w=1000&q=80",
       "deliverables": "Occupancy permits, structural warranties, as-built documentation."
     }
   ],
   "comparison": {
     "title": "Interactive 3D Render vs Built Execution",
     "description": "Geser slider di bawah untuk melihat kepresisian hasil render 3D arsitek kami dibandingkan hasil nyata konstruksi proyek yang dibangun.",
-    "renderImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85",
-    "buildImage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85"
+    "renderImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&fm=webp&w=1400&q=80",
+    "buildImage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&fm=webp&w=1400&q=80"
   },
   "workflow": {
     "badge": "Proven Execution",
